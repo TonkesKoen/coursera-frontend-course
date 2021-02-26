@@ -1,0 +1,696 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "location": "OnFatalError",
+    "filename": "report.20210213.133027.14344.001.json",
+    "dumpEventTime": "2021/02/13 13:30:27",
+    "processId": "14344",
+    "commandLine": [
+      "node",
+      "C:\\Users\\Tonke\\AppData\\Roaming\\npm\\\\node_modules\\browser-sync\\dist\\bin.js",
+      "start",
+      "--server",
+      "--directory",
+      "--files",
+      "**/*"
+    ],
+    "nodejsVersion": "v11.8.0",
+    "wordSize": "64 bit",
+    "componentVersions": {
+      "node": "11.8.0",
+      "v8": "7.0.276.38-node.16",
+      "uv": "1.25.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.0j",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0",
+      "arch": "x64",
+      "platform": "win32",
+      "release": "node"
+    },
+    "osVersion": "Windows 10",
+    "machine": "LAPTOP-N8RT34UA "
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    " [pc=00007FF6B3316B5C] std::basic_ostream<char,std::char_traits<char> >::operator<<+8924",
+    " [pc=00007FF6B3315C8D] std::basic_ostream<char,std::char_traits<char> >::operator<<+5133",
+    " [pc=00007FF6B3315662] std::basic_ostream<char,std::char_traits<char> >::operator<<+3554",
+    " [pc=00007FF6B340FD9D] uv_loop_fork+82637",
+    " [pc=00007FF6B38CCF4E] v8::internal::FatalProcessOutOfMemory+798",
+    " [pc=00007FF6B38CCE87] v8::internal::FatalProcessOutOfMemory+599",
+    " [pc=00007FF6B3BA5C94] v8::internal::Heap::RootIsImmortalImmovable+14788",
+    " [pc=00007FF6B3B9B8D4] v8::internal::Heap::CollectGarbage+7556",
+    " [pc=00007FF6B3B99FA8] v8::internal::Heap::CollectGarbage+1112",
+    " [pc=00007FF6B3BA3917] v8::internal::Heap::RootIsImmortalImmovable+5703",
+    " [pc=00007FF6B3BA3996] v8::internal::Heap::RootIsImmortalImmovable+5830",
+    " [pc=00007FF6B376456B] v8::internal::Factory::AllocateRawWithImmortalMap+59",
+    " [pc=00007FF6B3766FED] v8::internal::Factory::NewRawTwoByteString+77",
+    " [pc=00007FF6B3B548F3] v8::internal::Smi::SmiPrint+483",
+    " [pc=00007FF6B3761933] v8::internal::CompilationJob::operator=+1155",
+    " [pc=00007FF6B3F098DD] v8::internal::compiler::RawMachineAssembler::MakeNode+145581",
+    " [pc=000002869DB50461] "
+  ],
+  "javascriptHeap": {
+    "totalMemory": "1486012416",
+    "totalCommittedMemory": "1486012416",
+    "usedMemory": "1442612112",
+    "availableMemory": "42585344",
+    "memoryLimit": "1526909922",
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": "524288",
+        "committedMemory": "524288",
+        "capacity": "515584",
+        "used": "33520",
+        "available": "482064"
+      },
+      "new_space": {
+        "memorySize": "2097152",
+        "committedMemory": "2097152",
+        "capacity": "1031168",
+        "used": "121384",
+        "available": "909784"
+      },
+      "old_space": {
+        "memorySize": "1476071424",
+        "committedMemory": "1476071424",
+        "capacity": "1438327200",
+        "used": "1437740936",
+        "available": "586264"
+      },
+      "code_space": {
+        "memorySize": "1572864",
+        "committedMemory": "1572864",
+        "capacity": "1229472",
+        "used": "1229472",
+        "available": "0"
+      },
+      "map_space": {
+        "memorySize": "1585152",
+        "committedMemory": "1585152",
+        "capacity": "685920",
+        "used": "685920",
+        "available": "0"
+      },
+      "large_object_space": {
+        "memorySize": "4161536",
+        "committedMemory": "4161536",
+        "capacity": "43408112",
+        "used": "2800880",
+        "available": "40607232"
+      },
+      "new_large_object_space": {
+        "memorySize": "0",
+        "committedMemory": "0",
+        "capacity": "0",
+        "used": "0",
+        "available": "0"
+      }
+    }
+  },
+  "libuv": [
+    {
+      "type": "async",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "2335573717088",
+      "details": ""
+    },
+    {
+      "type": "timer",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "955133194320",
+      "details": "repeat: 0, timeout expired: 8 ms ago"
+    },
+    {
+      "type": "check",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "955133194480",
+      "details": ""
+    },
+    {
+      "type": "idle",
+      "is_active": "0",
+      "is_referenced": "1",
+      "address": "955133194600",
+      "details": ""
+    },
+    {
+      "type": "prepare",
+      "is_active": "0",
+      "is_referenced": "0",
+      "address": "955133194720",
+      "details": ""
+    },
+    {
+      "type": "check",
+      "is_active": "0",
+      "is_referenced": "0",
+      "address": "955133194840",
+      "details": ""
+    },
+    {
+      "type": "async",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "140697569814080",
+      "details": ""
+    },
+    {
+      "type": "async",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "140697569813856",
+      "details": ""
+    },
+    {
+      "type": "tty",
+      "is_active": "0",
+      "is_referenced": "1",
+      "address": "2335574315856",
+      "details": "width: 121, height: 13, write queue size: 0, writable"
+    },
+    {
+      "type": "signal",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "2335575853840",
+      "details": "signum: 28"
+    },
+    {
+      "type": "tty",
+      "is_active": "0",
+      "is_referenced": "1",
+      "address": "2335575720464",
+      "details": "width: 121, height: 13, write queue size: 0, writable"
+    },
+    {
+      "type": "tcp",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607606976",
+      "details": "LAPTOP-N8RT34UA:3000 (not connected), send buffer size: 65536, recv buffer size: 65536, write queue size: 0"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607307664",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607308768",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\index.html"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607308032",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607308400",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\fonts"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607307296",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap-theme.css"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607309136",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607305824",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607306192",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607306560",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap.css"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608236960",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap.css.map"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608237328",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap.min.css"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608236224",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\bootstrap.min.css.map"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608235120",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\css\\styles.css"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608237696",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608235856",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608238064",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608240640",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608239904",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608241376",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608238432",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608240272",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\js\\bootstrap.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608238800",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\js\\bootstrap.min.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608241008",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\js\\jquery-2.1.4.min.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608239168",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\js\\npm.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608234752",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\js\\script.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608236592",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\jumbotron_1200.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608239536",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\jumbotron_768.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608233648",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\jumbotron_992.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608234016",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu-tile.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608234384",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\restaurant-logo.png"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335608235488",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\restaurant-logo_large.png"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607402352",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\restaurant-logo_medium.png"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607399776",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\restaurant-logo_small.png"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607398304",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\specials-tile.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607400144",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\star-k-logo.png"
+    },
+    {
+      "type": "tcp",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607985824",
+      "details": "LAPTOP-N8RT34UA:3001 (not connected), send buffer size: 65536, recv buffer size: 65536, write queue size: 0"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607401616",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\menu-categories.html"
+    },
+    {
+      "type": "tcp",
+      "is_active": "0",
+      "is_referenced": "1",
+      "address": "2335607273872",
+      "details": ", send buffer size: 0, recv buffer size: 0, write queue size: 0"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607404560",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607400880",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607400512",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-1.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607401248",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-10.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607401984",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-11.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607402720",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-2.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607399040",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-3.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607403088",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-4.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607403456",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-5.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607403824",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-6.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607404192",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-7.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607405296",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-8.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607404928",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A-9.jpg"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335607399408",
+      "details": "filename: \\\\?\\D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after\\images\\menu\\A\\A.jpg"
+    },
+    {
+      "type": "tcp",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335617154752",
+      "details": "LAPTOP-N8RT34UA:3000 connected to LAPTOP-N8RT34UA:52460, send buffer size: 65536, recv buffer size: 65536, write queue size: 0, readable, writable"
+    },
+    {
+      "type": "tcp",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "2335606750944",
+      "details": "LAPTOP-N8RT34UA:3000 connected to LAPTOP-N8RT34UA:52461, send buffer size: 65536, recv buffer size: 65536, write queue size: 0, readable, writable"
+    },
+    {
+      "type": "timer",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "2335612446264",
+      "details": "repeat: 0, timeout in: 8000 ms"
+    }
+  ],
+  "environmentVariables": {
+    "=D:": "D:\\coursera\\coursera-frontend-course\\site\\module_3\\lecture37\\after",
+    "ADSK_3DSMAX_x64_2017": "D:\\tools hammer\\3ds Max 2017\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Tonke\\AppData\\Roaming",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_15260_JYWAJLEWYPBDVHUM",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LAPTOP-N8RT34UA",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Tonke",
+    "LOCALAPPDATA": "C:\\Users\\Tonke\\AppData\\Local",
+    "LOGONSERVER": "\\\\LAPTOP-N8RT34UA",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\Tonke\\OneDrive - Windesheim Office365",
+    "OneDriveCommercial": "C:\\Users\\Tonke\\OneDrive - Windesheim Office365",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;D:\\node.js\\;C:\\Program Files\\Symfony;D:\\Xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\FFMPEG\\bin;D:\\Putty\\;C:\\Program Files (x86)\\dotnet\\;C:\\Users\\Tonke\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Tonke\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Users\\Tonke\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Tonke\\AppData\\Local\\GitHubDesktop\\bin;D:\\Microsoft VS Code\\bin;C:\\Users\\Tonke\\AppData\\Roaming\\npm;C:\\Users\\Tonke\\.dotnet\\tools;C:\\Users\\Tonke\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Tonke\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Tonke\\.dotnet\\tools",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "5e03",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Users\\Tonke\\OneDrive\\Documenten\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "sourcesdk": "D:\\games\\steamapps\\common\\SourceSDK",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Tonke\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Tonke\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LAPTOP-N8RT34UA",
+    "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-N8RT34UA",
+    "USERNAME": "Tonke",
+    "USERPROFILE": "C:\\Users\\Tonke",
+    "VBOX_MSI_INSTALL_PATH": "D:\\VirtalBox\\",
+    "windir": "C:\\WINDOWS",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.53.2",
+    "LANG": "nl_NL.UTF-8",
+    "COLORTERM": "truecolor",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-097acc26ba-sock",
+    "GIT_ASKPASS": "d:\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "VSCODE_GIT_ASKPASS_NODE": "D:\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_ASKPASS_MAIN": "d:\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js"
+  },
+  "sharedObjects": [
+    "D:\\node.js\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\NETAPI32.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\NETUTILS.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\SRVCLI.DLL",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTSP.dll",
+    "C:\\WINDOWS\\system32\\rsaenh.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll"
+  ]
+}
